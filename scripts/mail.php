@@ -1,21 +1,33 @@
-<?php
 
-function redirect_to($location){
-  if($location != NULL){
-    header("Location: {$location}");
-    exit;
-  }
-}
-  //echo "From mail.php";
-  function submitMessage($name, $email, $message){
-      $to = "yzhao333@gmail.com";
-      $subj = "Email from Portfolio Site";
-      $extra = "Reply-to:{$email}";
-      $msg = "Name: ".$name."\n\nEmail: ".$email."\n\nMassage: ".$message;
-      //this will not work locally
-      //this needs to be tested on your hosting
-      //mail($to, $subj. $msg, $extra);
-      $direct = $direct."?name={$name}";
-      redirect_to($direct);
-  }
+<?php
+    if(isset($_POST["fname"]) && isset($_POST["lname"]) && isset($_POST["email"])){
+        $message = "";
+        if(empty($_POST["fname"]) || empty($_POST["lname"]) || empty($_POST["email"])){
+            $message = "Sorry, You didn't fill in all required fields.";
+            echo $message;
+        }
+        else{
+            $fname = $_POST["fname"];
+            $lname = $_POST["lname"];
+            $emailAddr = $_POST["email"];
+            if(!empty($_POST["comment"])){
+                $comment = $_POST["comment"];
+            }
+            $fullName = $fname . " " . $lname;
+            submitMessage($fullName, $emailAddr, $comment);
+            $message = "You have sent message to me successfully.";
+            echo $message;
+        }
+
+    }
+
+    function submitMessage($name, $email, $message){
+        $to = "yzhao333@gmail.com";
+        $subj = "Email from Portfolio Site";
+        $headers = 'From: ' . $email . PHP_EOL ;
+        $msg = "Name: ".$name."\n\nEmail: ".$email."\n\nMassage: ".$message;
+        //this will not work locally
+        //this needs to be tested on your hosting
+        mail($to, $subj, $msg, $headers);
+    }
 ?>

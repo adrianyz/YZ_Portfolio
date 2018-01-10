@@ -35,7 +35,7 @@
     width: 5em;
     position: absolute;
     top: 42vh;
-    left: 60vw;
+    left: 16em;
   }
 }
 
@@ -78,10 +78,28 @@
   }
 }
 
+#crunican:hover,
+#lor:hover,
+#mona:hover,
+#oev:hover,
+#parentLogo:hover,
+#precise:hover {
+  img {
+    transition: 0.7s;
+    -ms-transform: scale(1.1,1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1,1.1);
+    /* Safari */
+    transform: scale(1.1,1.1);
+    /* Standard syntax */
+  }
+}
+
 #parentLogo {
   overflow: hidden;
 
   img {
+    width: 40%;
     top: 10%;
     right: 10%;
   }
@@ -91,6 +109,7 @@
   overflow: hidden;
 
   img {
+    width: 40%;
     top: -10%;
     left: 10%;
   }
@@ -100,6 +119,7 @@
   overflow: hidden;
 
   img {
+    width: 40%;
     top: 10%;
     right: 10%;
   }
@@ -109,8 +129,9 @@
   overflow: hidden;
 
   img {
+    width: 70%;
     top: 10%;
-    left: 10%;
+    left: 15%;
   }
 }
 
@@ -118,8 +139,9 @@
   overflow: hidden;
 
   img {
+    width: 70%;
     top: 20%;
-    left: 10%;
+    left: 15%;
   }
 }
 
@@ -127,7 +149,8 @@
   overflow: hidden;
 
   img {
+    width: 80%;
     top: 20%;
-    left: 5%;
+    left: 10%;
   }
 }

@@ -1,11 +1,9 @@
 (function () {
-    var showboard = document.querySelector('.portfolio_showboard'),
-        close = document.querySelector('.portfolio_close'),
-        portfolioWrap = document.querySelectorAll('.portfolio_wrap'),
-        image = document.querySelector('.portfolio_img'),
-        title = document.querySelector('.portfolio_title'),
-        noScroll = document.querySelector('body'),
-        content = document.querySelector('.portfolio_content');
+    var showboard = document.querySelector('.lightbox'),
+        close = document.querySelector('.lightboxOut'),
+        portfolioWrap = document.querySelectorAll('.lightboxWrap'),
+        image = document.querySelector('.lightboxImg'),
+        content = document.querySelector('.lightboxDesc');
 
 
     function lightbox() {
@@ -18,7 +16,6 @@
 
         image.src = objectIndex.image;
         image.alt = objectIndex.alt;
-        title.innerHTML = objectIndex.title;
         content.innerHTML = objectIndex.content;
     }
 

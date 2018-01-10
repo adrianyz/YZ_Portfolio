@@ -1,0 +1,24 @@
+$primColor: #79f2dc;
+$secColor: #3d79f2;
+$dark_grey: #292929;
+$light_grey: #f2f2f2;
+
+
+@font-face {
+  font-family: 'selimaregular';
+  src: url('../font/selima/Selima.eot');
+  src: url('../font/selima/Selima.woff2') format('woff2'),
+       url('../font/selima/Selima.woff') format('woff'),
+       url('../font/selima/Selima.ttf') format('truetype'),
+       url('../font/selima/Selima.svg#Selima') format('svg'),
+       url('../font/selima/Selima.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.align-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}

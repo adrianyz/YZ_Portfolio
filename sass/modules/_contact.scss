@@ -1,0 +1,135 @@
+
+#contact{
+
+  height: 200vh;
+
+  @media (min-width:40em)
+  {
+    height: 100vh;
+  }
+
+}
+
+#contactCover
+{
+  background-color: $primColor;
+  height:100vh;
+}
+
+#contactCoverText{
+  margin: 0 auto;
+      position:relative;
+      height:90vh;
+
+  h3{
+    font-family: 'selimaregular';
+    font-size: 10em;
+    color: $light_grey;
+    margin-top: 30vh;
+    margin-left: 5%;
+    position:absolute;
+  }
+
+  img{
+    width:5em;
+    position:absolute;
+    top:40vh;
+    left:22em;
+  }
+}
+
+#contact_wrap{
+  background-color: $light_grey;
+  position:relative;
+  height:100vh;
+}
+
+#formHeader
+{
+  background-color: $dark_grey;
+  padding-top:3vh;
+  text-align: center;
+  height:10vh;
+
+  p{
+    color: $light_grey;
+    font-family: Futura, Arial, Helvetica;
+    font-size: 2em;
+  }
+}
+
+#contactForm{
+  height:69vh;
+  margin-top:30px;
+
+  label
+{
+	color: $dark_grey;
+	font-size: 1em;
+  font-family: Avenir, arial, helvetica;
+  line-height: 1em;
+}
+
+input, textarea
+{
+  	background-color: $light_grey;
+	border: 1px solid $primColor;
+  line-height: 1.5em;
+}
+
+#comments
+{
+	resize:none;
+}
+
+#submit
+{
+	display: block;
+  float:right;
+	width: 150px;
+	color: $dark_grey;
+	font-family: Avenir, arial, helvetica;
+	font-size: 1em;
+	line-height: 1.5em;
+	-webkit-transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-moz-transition:    all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-ms-transition:     all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  	-o-transition:      all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  	transition:         all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#submit:hover
+{
+  background-color: $dark_grey;
+	color: $light_grey;
+}
+
+}
+
+
+#socialNav
+{
+  background-color: $dark_grey;
+  position:absolut;
+  bottom:0;
+  height:21vh;
+  font-family: Avenir, arial, helvetica;
+  font-size:1.5em;
+
+  li{
+    text-align: center;
+    a{
+      color: $light_grey;
+      line-height: 7vh;
+      padding: 0;
+    }
+
+    a:hover{
+      color: $primColor;
+      transition: 0.7s;
+      -ms-transform: scale(1.1,1.1); /* IE 9 */
+   -webkit-transform: scale(1.1,1.1); /* Safari */
+   transform: scale(1.1,1.1); /* Standard syntax */
+    }
+  }
+}

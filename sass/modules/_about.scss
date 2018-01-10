@@ -1,0 +1,60 @@
+
+#about{
+
+  height: 200vh;
+
+  @media (min-width:40em)
+  {
+    height: 100vh;
+  }
+
+}
+
+#aboutCover
+{
+  background-color: $primColor;
+  height:100vh;
+}
+
+#aboutCoverText{
+  margin: 0 auto;
+      position:relative;
+      height:90vh;
+
+  h3{
+    font-family: 'selimaregular';
+    font-size: 10em;
+    color: $light_grey;
+    margin-top: 30vh;
+    position:absolute;
+  }
+
+  img{
+    width:5em;
+    position:absolute;
+    top:40vh;
+    left:14.9em;
+  }
+}
+
+.aboutNav{
+  width: 100%;
+}
+
+#aboutText
+{
+  background-color: $light_grey;
+  height:100vh;
+
+  p{
+    text-align: center;
+    color: $dark_grey;
+    font-family: Avenir, Arial, Helvetica;
+    font-size:1.5em;
+  }
+}
+
+#text_wrap
+{
+  margin-top: 20vh;
+}

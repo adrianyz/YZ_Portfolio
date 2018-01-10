@@ -1,0 +1,228 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian Zhao</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div id="container" class="grid-x">
+    <h1 class="hide">Adrian's Portfolio</h1>
+
+    <header class="cell" id="topBar" data-sticky-container>
+      <div class="grid-x show-for-small-only sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+        <div class="small-10 small-offset-1 cell">
+          <nav class="grid-x mainNav">
+            <h2 class="hide">Main Nav Small</h2>
+            <ul class="menu align-center cell" data-smooth-scroll id="smallNav">
+              <!--<li class="navHome"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"><a href="#home">Home</a></li>-->
+
+              <li class="navAbout small-2"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
+              <li class="navWork small-2"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotWork"><a href="#work">Work</a></li>
+              <li class="navContact small-2"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotContact"><a href="#contact">Contact</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="grid-x show-for-medium">
+        <div class="hide-for-small-only hide-for-medium-only large-2 large-offset-1 show-for-large cell">
+          <div class="grid-container"><img src="images/logo_outline.svg" alt="logo" width="80" class="centered grid-x grid-margin-x grid-y mainLogo" style="height: 80px;"></div>
+        </div>
+        <div class="small-10 small-offset-1 medium-6 medium-offset-3 large-4 large-offset-4 cell">
+          <nav class="grid-x mainNav" id="midNav">
+            <h2 class="hide">Main Nav</h2>
+            <ul class="menu cell align-center" data-magellan>
+              <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
+              <li class="navAbout"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
+              <li class="navWork"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotWork"><a href="#work">Work</a></li>
+              <li class="navContact"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotContact"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Add content where magellan will be linked -->
+    <div class="sections">
+      <!--home section-->
+      <section id="home" data-magellan-target="home" class="grid-x">
+        <h2 class="hide">Home</h2>
+        <div id="homeLogo" class="cell align-center">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+      </section>
+
+      <!--about section-->
+
+      <section id="about" data-magellan-target="about" class="grid-x">
+        <h2 class="hide">About</h2>
+        <!--about cover-->
+        <div class="medium-6 cell" id="aboutCover">
+          <div class="grid-x">
+            <div class="small-8 small-offset-2" id="aboutCoverText">
+              <img src="images/circle_blue.svg" alt="dot" class="big_dots">
+              <h3>About</h3>
+            </div>
+            <div class="cell">
+              <nav class="grid-x aboutNav show-for-medium">
+                <h2 class="hide">Main Nav</h2>
+                <ul class="menu  align-center cell" data-magellan>
+                  <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
+                  <li class="navAbout"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
+                  <li class="navWork"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotWork"><a href="#work">Work</a></li>
+                  <li class="navContact"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotContact"><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--about text-->
+        <div class="medium-6 cell" id="aboutText">
+          <h3 class="hide">About_Text</h3>
+          <div class="grid-x">
+            <div id="text_wrap" class="small-10 small-offset-1 cell">
+              <p>My name is Adrian Zhao, and I am a frontend developer, amateur photographer and Ukulele learner.</p>
+              <br>
+              <p>I was an environmental engineer for years specialized in water and wastewater treatment to create a better world. Now I use systematical training and creativity to visualize and implement an online experience that you and your user will
+                appreciate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--work section-->
+      <section id="work" data-magellan-target="work" class="grid-x">
+        <h2 class="hide">Work</h2>
+        <!--work cover-->
+        <div class="medium-6 cell" data-sticky-container id="stky_container" style="margin-top:0;">
+          <div class="grid-x sticky" data-sticky data-top-anchor="parentLogo:top" data-btm-anchor="lor:bottom" id="workCover">
+            <div class="small-8 small-offset-2" id="workCoverText"><img src="images/circle_green.svg" alt="dot" class="big_dots">
+              <h3>Works</h3>
+            </div>
+            <div class="cell">
+              <nav class="grid-x aboutNav show-for-medium">
+                <h2 class="hide">Main Nav</h2>
+                <ul class="menu  align-center cell" data-magellan>
+                  <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
+                  <li class="navAbout"><img src="images/circle_green.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
+                  <li class="navWork"><img src="images/circle_green.svg" alt="dot" width="10" class="dotWork"><a href="#work">Work</a></li>
+                  <li class="navContact"><img src="images/circle_green.svg" alt="dot" width="10" class="dotContact"><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--work items-->
+        <div class="medium-6 cell" id="workBox">
+          <ul class="grid-x grid-margin-x">
+            <li id="parentLogo" class="work_item cell">
+              <img src="images/parent_logo_tinted.svg" alt="crunican" width="200">
+              <h4 class="align-center">Parent Logo</h4>
+            </li>
+
+            <li id="crunican" class="work_item cell">
+              <img src="images/crunican_tinted.svg" alt="crunican" width="200">
+              <h4 class="align-center">Crunican Orchard</h4>
+            </li>
+
+            <li id="precise" class="work_item cell">
+              <img src="images/precise_tinted.svg" alt="precise" width="200">
+              <h4 class="align-center">Precise Services</h4>
+            </li>
+
+            <li id="mona" class="work_item cell">
+              <img src="images/mona_tinted.svg" alt="mona" width="350">
+              <h4 class="align-center">Mona’s<br>Mediterranean</h4>
+            </li>
+
+            <li id="oev" class="work_item cell">
+              <img src="images/oev_tinted.svg" alt="parentLogo" width="300">
+              <h4 class="align-center">OEV<br>Revitalization</h4>
+            </li>
+
+            <li id="lor" class="work_item cell">
+              <img src="images/lor_tinted.svg" alt="parentLogo" width="400">
+              <h4 class="align-center">The Fellowship<br>of the Ring</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--lightbox-->
+      <section class="lightbox">
+        <i class="fa fa-times close-lightbox"></i>
+        <img src="" alt="WOW look at this lightbox image" class="lightbox-img">
+      </section>
+
+      <!--contact section-->
+      <section id="contact" data-magellan-target="contact" class="grid-x">
+        <h2 class="hide">Contact</h2>
+        <!--contact cover-->
+        <div class="medium-6 cell" id="contactCover">
+          <div class="grid-x">
+            <div class="small-12" id="contactCoverText"><img src="images/circle_blue.svg" alt="dot" class="big_dots">
+              <h3>Contact</h3>
+            </div>
+            <div class="cell">
+              <nav class="grid-x aboutNav show-for-medium">
+                <h2 class="hide">Main Nav</h2>
+                <ul class="menu  align-center cell" data-magellan>
+                  <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
+                  <li class="navAbout"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
+                  <li class="navWork"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotWork"><a href="#work">Work</a></li>
+                  <li class="navContact"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotContact"><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="medium-6 cell" id="contact_wrap">
+          <div id="formHeader">
+            <p>Leave me a message</p>
+          </div>
+          <form id="contactForm" action="mail.php" method="post" class="grid-x">
+            <div class="small-10 small-offset-1 cell" id="theForm">
+              <label for="name">Name: <span class="required">(required)</span></label>
+              <input type="text" required id="name" name="fullName" size="30">
+
+              <label for="email">Email: <span class="required">(required)</span></label>
+              <input type="email" required id="email" size="30">
+
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" size="30">
+            </div>
+
+            <div class="small-10 small-offset-1 cell">
+              <label for="comments">Comments:</label>
+              <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+              <input id="submit" type="submit" value="Submit">
+
+
+            </div>
+          </form>
+          <ul class="vertical menu cell" id="socialNav">
+            <li><a target="_blank" href="https://www.instagram.com/adrianzhao/">Instagram</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/adrian-yizhao-zhao-1a0a5620/">Linkedin</a></li>
+            <li><a target="_blank" href="https://www.behance.net/adrianzhao">Behance</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

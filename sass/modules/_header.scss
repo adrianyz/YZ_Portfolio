@@ -1,0 +1,84 @@
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+body {
+  background-color: $dark_grey;
+}
+
+header {
+  background-color: transparent;
+  height: 80px;
+}
+
+.mainLogo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  a {
+    color: $light_grey;
+    text-align: center;
+    width: 6em;
+    line-height:3em;
+  }
+
+}
+
+@media(min-width:1024px) {#midNav{
+float: right;
+}}
+
+
+
+.navHome, .navAbout, .navWork, .navContact{
+  position: relative;
+  a {
+    color: $light_grey;
+    text-align: center;
+    width: 6em;
+    line-height:3em;
+  }
+  img {
+    opacity:0;
+    transform: (0,1em);
+  }
+}
+
+.dotHome {
+  position: absolute;
+  left: 4.1rem;
+  top: 35px;
+}
+
+.navHome:hover, .navAbout:hover, .navWork:hover, .navContact:hover
+{
+  a{color: $light_grey;}
+  img {opacity:1;
+    transition: 0.7s;
+transform: (0,0);
+  }
+
+}
+
+
+.dotAbout {
+  position: absolute;
+  left: 4.2rem;
+  top: 35px;
+}
+
+
+.dotWork {
+  position: absolute;
+  left: 4.1rem;
+  top: 35px;
+}
+
+
+.dotContact {
+  position: absolute;
+  left: 4.6rem;
+  top: 35px;
+}

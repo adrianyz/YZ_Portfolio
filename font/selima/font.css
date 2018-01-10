@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Selima';
+  src: url('Selima.eot');
+  src: url('Selima.woff2') format('woff2'),
+       url('Selima.woff') format('woff'),
+       url('Selima.ttf') format('truetype'),
+       url('Selima.svg#Selima') format('svg'),
+       url('Selima.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,129 @@
+#work{
+
+  height: 300vh;
+
+  @media (min-width:40em)
+  {
+    height: 200vh;
+  }
+
+}
+#stky_container{
+  height:100vh;
+}
+#workCover
+{
+  background-color: $secColor;
+  height: 100vh;
+}
+
+#workBox
+{
+  height: 200vh;
+}
+#workCoverText{
+  margin: 0 auto;
+      position:relative;
+      height:90vh;
+
+  h3{
+    font-family: 'selimaregular';
+    font-size: 10em;
+    color: $light_grey;
+    margin-top: 30vh;
+    position:absolute;
+  }
+
+  img{
+    width:5em;
+    position:absolute;
+    top:42vh;
+    left:16em;
+  }
+}
+
+.work_item
+{
+  height:33.33vh;
+  background-color: $dark_grey;
+  width: 50vw;
+  position:relative;
+
+  h4{
+    font-family: futura, Arial, Helvetica;
+    font-size:2em;
+    color: $secColor;
+margin-top: 25%;
+    text-align: center;
+    letter-spacing: 0.5em;
+  }
+
+  img{
+    opacity: 0.15;
+position:absolute;;
+  }
+
+}
+
+.work_item:hover{
+  background-color: $light_grey;
+  transition: 0.7s;
+}
+
+#workBox
+{
+  ul{list-style: none;}
+  li{text-align: center;}
+}
+
+#parentLogo{
+  overflow: hidden;
+  img{
+    top: 10%;
+    right: 10%;
+  }
+}
+
+#crunican{
+  overflow: hidden;
+
+  img{
+    top: -10%;
+    left: 10%;
+  }
+}
+
+#precise{
+  overflow: hidden;
+  img{
+    top: 10%;
+    right: 10%;
+  }
+}
+
+#mona{
+  overflow: hidden;
+
+  img{
+top:10%;
+left:10%;
+  }
+}
+
+#oev{
+  overflow: hidden;
+
+  img{
+top:20%;
+left:10%;
+  }
+}
+
+#lor{
+  overflow: hidden;
+
+  img{
+top:20%;
+left:5%;
+  }
+}

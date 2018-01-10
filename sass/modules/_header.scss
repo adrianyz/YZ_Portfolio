@@ -17,31 +17,35 @@ header {
 .mainLogo {
   padding-top: 10px;
   padding-bottom: 10px;
+
   a {
     color: $light_grey;
     text-align: center;
     width: 6em;
-    line-height:3em;
+    line-height: 3em;
   }
-
+}
+@media(min-width:1024px) {
+  #midNav {
+    float: right;
+  }
 }
 
-@media(min-width:1024px) {#midNav{
-float: right;
-}}
-
-
-
-.navHome, .navAbout, .navWork, .navContact{
+.navAbout,
+.navContact,
+.navHome,
+.navWork {
   position: relative;
+
   a {
     color: $light_grey;
     text-align: center;
     width: 6em;
-    line-height:3em;
+    line-height: 3em;
   }
+
   img {
-    opacity:0;
+    opacity: 0;
     transform: (0,1em);
   }
 }
@@ -52,16 +56,20 @@ float: right;
   top: 35px;
 }
 
-.navHome:hover, .navAbout:hover, .navWork:hover, .navContact:hover
-{
-  a{color: $light_grey;}
-  img {opacity:1;
-    transition: 0.7s;
-transform: (0,0);
+.navAbout:hover,
+.navContact:hover,
+.navHome:hover,
+.navWork:hover {
+  a {
+    color: $light_grey;
   }
 
+  img {
+    opacity: 1;
+    transition: 0.7s;
+    transform: (0,0);
+  }
 }
-
 
 .dotAbout {
   position: absolute;
@@ -69,13 +77,11 @@ transform: (0,0);
   top: 35px;
 }
 
-
 .dotWork {
   position: absolute;
   left: 4.1rem;
   top: 35px;
 }
-
 
 .dotContact {
   position: absolute;

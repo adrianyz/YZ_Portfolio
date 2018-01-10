@@ -1,129 +1,133 @@
-#work{
-
+#work {
   height: 300vh;
-
-  @media (min-width:40em)
-  {
+  @media (min-width:40em) {
     height: 200vh;
   }
+}
 
+#stky_container {
+  height: 100vh;
 }
-#stky_container{
-  height:100vh;
-}
-#workCover
-{
+
+#workCover {
   background-color: $secColor;
   height: 100vh;
 }
 
-#workBox
-{
+#workBox {
   height: 200vh;
 }
-#workCoverText{
-  margin: 0 auto;
-      position:relative;
-      height:90vh;
 
-  h3{
+#workCoverText {
+  margin: 0 auto;
+  position: relative;
+  height: 90vh;
+
+  h3 {
     font-family: 'selimaregular';
     font-size: 10em;
     color: $light_grey;
     margin-top: 30vh;
-    position:absolute;
+    position: absolute;
   }
 
-  img{
-    width:5em;
-    position:absolute;
-    top:42vh;
-    left:16em;
+  img {
+    width: 5em;
+    position: absolute;
+    top: 42vh;
+    left: 60vw;
   }
 }
 
-.work_item
-{
-  height:33.33vh;
+.work_item {
+  height: 33.33vh;
   background-color: $dark_grey;
   width: 50vw;
-  position:relative;
+  position: relative;
 
-  h4{
+  h4 {
     font-family: futura, Arial, Helvetica;
-    font-size:2em;
+    font-size: 2em;
     color: $secColor;
-margin-top: 25%;
+    margin-top: 25%;
     text-align: center;
     letter-spacing: 0.5em;
   }
 
-  img{
+  img {
     opacity: 0.15;
-position:absolute;;
+    position: absolute;
+  }
+}
+
+.work_item:hover {
+  background-color: $light_grey;
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out;
+  -o-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+}
+
+#workBox {
+  ul {
+    list-style: none;
   }
 
+  li {
+    text-align: center;
+  }
 }
 
-.work_item:hover{
-  background-color: $light_grey;
-  transition: 0.7s;
-}
-
-#workBox
-{
-  ul{list-style: none;}
-  li{text-align: center;}
-}
-
-#parentLogo{
+#parentLogo {
   overflow: hidden;
-  img{
+
+  img {
     top: 10%;
     right: 10%;
   }
 }
 
-#crunican{
+#crunican {
   overflow: hidden;
 
-  img{
+  img {
     top: -10%;
     left: 10%;
   }
 }
 
-#precise{
+#precise {
   overflow: hidden;
-  img{
+
+  img {
     top: 10%;
     right: 10%;
   }
 }
 
-#mona{
+#mona {
   overflow: hidden;
 
-  img{
-top:10%;
-left:10%;
+  img {
+    top: 10%;
+    left: 10%;
   }
 }
 
-#oev{
+#oev {
   overflow: hidden;
 
-  img{
-top:20%;
-left:10%;
+  img {
+    top: 20%;
+    left: 10%;
   }
 }
 
-#lor{
+#lor {
   overflow: hidden;
 
-  img{
-top:20%;
-left:5%;
+  img {
+    top: 20%;
+    left: 5%;
   }
 }

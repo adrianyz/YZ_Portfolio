@@ -1,60 +1,52 @@
-
-#about{
-
+#about {
   height: 200vh;
-
-  @media (min-width:40em)
-  {
+  @media (min-width:40em) {
     height: 100vh;
   }
-
 }
 
-#aboutCover
-{
+#aboutCover {
   background-color: $primColor;
-  height:100vh;
+  height: 100vh;
 }
 
-#aboutCoverText{
+#aboutCoverText {
   margin: 0 auto;
-      position:relative;
-      height:90vh;
+  position: relative;
+  height: 90vh;
 
-  h3{
+  h3 {
     font-family: 'selimaregular';
     font-size: 10em;
     color: $light_grey;
     margin-top: 30vh;
-    position:absolute;
+    position: absolute;
   }
 
-  img{
-    width:5em;
-    position:absolute;
-    top:40vh;
-    left:14.9em;
+  img {
+    width: 5em;
+    position: absolute;
+    top: 40vh;
+    left: 14.9em;
   }
 }
 
-.aboutNav{
+.aboutNav {
   width: 100%;
 }
 
-#aboutText
-{
+#aboutText {
   background-color: $light_grey;
-  height:100vh;
+  height: 100vh;
 
-  p{
+  p {
     text-align: center;
     color: $dark_grey;
     font-family: Avenir, Arial, Helvetica;
-    font-size:1.5em;
+    font-size: 1.5em;
   }
 }
 
-#text_wrap
-{
+#text_wrap {
   margin-top: 20vh;
 }

@@ -1,0 +1,50 @@
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 30;
+}
+
+#closeBtn
+{position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#close_top{
+  transform: rotate(45deg);
+  transform-origin: left 50%;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 12px;
+  background-color: $light_grey;
+}
+
+#close_btm{
+  transform: rotate(-45deg);
+  transform-origin: left 50%;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 12px;
+  background-color: $light_grey;
+}
+
+#lightbox_content
+{
+  margin-top: 10vh;
+
+  p{
+    color: $light_grey;
+    font-family: Avenir, Arial, Helvetica;
+    font-size: 1em;
+    text-align: center;
+    margin-top:10vh;
+  }
+}

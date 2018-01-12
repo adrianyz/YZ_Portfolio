@@ -1,33 +1,24 @@
-
 <?php
-    if(isset($_POST["fname"]) && isset($_POST["lname"]) && isset($_POST["email"])){
-        $message = "";
-        if(empty($_POST["fname"]) || empty($_POST["lname"]) || empty($_POST["email"])){
-            $message = "Sorry, You didn't fill in all required fields.";
-            echo $message;
-        }
-        else{
-            $fname = $_POST["fname"];
-            $lname = $_POST["lname"];
-            $emailAddr = $_POST["email"];
-            if(!empty($_POST["comment"])){
-                $comment = $_POST["comment"];
-            }
-            $fullName = $fname . " " . $lname;
-            submitMessage($fullName, $emailAddr, $comment);
-            $message = "You have sent message to me successfully.";
-            echo $message;
-        }
+  //echo "From mail.php";
+  //if(isset($_GET["username"]) && isset($_GET["emailAddr"]) && isset($_GET["phoneNumber"])){
+    $username = $_GET["username"];
+    $emailAddr = $_GET["emailAddr"];
+    $phoneNo = $_GET["phoneNumber"];
+    $comments = $_GET["comment"];
+    submitMessage($username, $emailAddr, $phoneNo, $comments);
+    echo "Thank you! I will get back to you shortly.";
+  //}
+  //else{
+  //  echo "Uh.....Something went wrong";
+  //}
 
-    }
-
-    function submitMessage($name, $email, $message){
-        $to = "yzhao333@gmail.com";
-        $subj = "Email from Portfolio Site";
-        $headers = 'From: ' . $email . PHP_EOL ;
-        $msg = "Name: ".$name."\n\nEmail: ".$email."\n\nMassage: ".$message;
-        //this will not work locally
-        //this needs to be tested on your hosting
-        mail($to, $subj, $msg, $headers);
-    }
+  function submitMessage($name, $email, $phone, $message){
+      $to = "yzhao333@gmail.com";
+      $subj = "Email from Portfolio Site";
+      $headers = 'From: ' . $email . PHP_EOL ;
+      $msg = "Name: " . $name . "\n\nEmail: ". $email . "\n\nPhone: " . $phone . "\n\nMessage: " . $message;
+      //this will not work locally
+      //this needs to be tested on your hosting
+      mail($to, $subj, $msg, $headers);
+  }
 ?>

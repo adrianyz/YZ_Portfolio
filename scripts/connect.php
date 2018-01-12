@@ -1,18 +1,13 @@
-<?php   //This script will connect us to our database
-  $user = "root";
-  $pass = "root";
-//$pass = "root";
+<?php
+  $user = "adryzhao";
+  $pass = "290703joel";
   $url = "localhost";
-  $db = "db_lightbox";
+  $db = "yz333_lightBox";
 
-//ticket to access our db
-  $link = mysqli_connect($url, $user, $pass, $db);//windows
-  // $link - mysqli_connect($url, $user, $pass, $db "8889");
+  $link = mysqli_connect($url, $user, $pass, $db);
 
-  //Check our connection if it fails
   if(mysqli_connect_error()){
       printf("Connect Failed: %s\n", mysqli_connect_error());
       exit();
-
   }
  ?>

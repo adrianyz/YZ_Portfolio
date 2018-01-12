@@ -14,8 +14,8 @@
   <div id="container" class="grid-x">
     <h1 class="hide">Adrian's Portfolio</h1>
 
-    <header class="cell" id="topBar" data-sticky-container>
-      <div class="grid-x show-for-small-only sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+    <header class="small-12 cell" data-sticky-container>
+      <div class="grid-x show-for-small-only sticky" data-sticky data-margin-top="0" data-sticky-on="small" id="topBar">
         <div class="small-10 small-offset-1 cell">
           <nav class="grid-x mainNav">
             <h2 class="hide">Main Nav Small</h2>
@@ -33,7 +33,85 @@
 
       <div class="grid-x show-for-medium">
         <div class="hide-for-small-only hide-for-medium-only large-2 large-offset-1 show-for-large cell">
-          <div class="grid-container"><img src="images/logo_outline.svg" alt="logo" width="80" class="centered grid-x grid-margin-x grid-y mainLogo" style="height: 80px;"></div>
+<!--branding orbit-->
+<div class="grid-container">
+  <a id="styleGuide"><img src="images/logo_image.svg" alt="logo" width="80" class="centered grid-x grid-margin-x grid-y mainLogo" style="height: 80px;"></a>
+</div>
+
+        <!--  <div class="grid-container">
+            <a id="styleGuide" class="button" data-open="branding"><img src="images/logo_image.svg" alt="logo" width="80" class="centered grid-x grid-margin-x grid-y mainLogo" style="height: 80px;"></a>
+          </div>
+
+          <div class="reveal" id="branding" data-reveal>
+
+            <div class="orbit" role="region" aria-label="branding document" data-orbit>
+              <div class="orbit-wrapper">
+                <div class="orbit-controls">
+                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                </div>
+                <ul class="orbit-container">
+                  <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg1.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg2.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg3.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Encapsulating</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg4.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Outta This World</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg5.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Outta This World</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg6.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Outta This World</figcaption>
+                    </figure>
+                  </li>
+                  <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                      <img class="orbit-image" src="images/brand/brandImg7.jpg" alt="Space">
+                      <figcaption class="orbit-caption">Outta This World</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                <button data-slide="4"><span class="show-for-sr">Second slide details.</span></button>
+                <button data-slide="5"><span class="show-for-sr">Third slide details.</span></button>
+                <button data-slide="6"><span class="show-for-sr">Fourth slide details.</span></button>
+                <button data-slide="7"><span class="show-for-sr">Fourth slide details.</span></button>
+              </nav>
+            </div>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+-->
         </div>
         <div class="small-10 small-offset-1 medium-6 medium-offset-3 large-4 large-offset-4 cell">
           <nav class="grid-x mainNav" id="midNav">
@@ -66,13 +144,13 @@
         <!--about cover-->
         <div class="medium-6 cell" id="aboutCover">
           <div class="grid-x">
-            <div class="small-8 small-offset-2" id="aboutCoverText">
-              <img src="images/circle_blue.svg" alt="dot" class="big_dots">
-              <h3>About</h3>
+            <div class="small-12 cell" id="aboutCoverText">
+              <img src="images/circle_blue.svg" alt="dot" class="big_dots" id="about_dot">
+              <img src="images/about.svg" alt="about" id="about_text" width="950">
             </div>
             <div class="cell">
               <nav class="grid-x aboutNav show-for-medium">
-                <h2 class="hide">Main Nav</h2>
+                <h2 class="hide">About Nav</h2>
                 <ul class="menu  align-center cell" data-magellan>
                   <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
                   <li class="navAbout"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
@@ -93,7 +171,20 @@
               <p>I was an environmental engineer for years specialized in water and wastewater treatment to create a better world. Now I use systematical training and creativity to visualize and implement an online experience that you and your user will
                 appreciate.
               </p>
+              <br>
+              <p><button class="button" data-open="resume">Resume</button></p>
+
+              <div class="reveal" id="resume" data-reveal>
+                <img src="images/Adrian_Resume.jpg" alt="Adrian's Resume">
+                <div id="resumeCloseBtn" class="close-button" data-close aria-label="Close modal">
+                  <div id="r_close_top"></div>
+                  <div id="r_close_btm"></div>
+                </div>
+              </div>
             </div>
+
+
+
           </div>
         </div>
 
@@ -103,16 +194,17 @@
       <section id="work" data-magellan-target="work" class="grid-x">
         <h2 class="hide">Work</h2>
         <!--work cover-->
-        <div class="medium-6 cell" data-sticky-container id="stky_container" style="margin-top:0;">
-          <div class="grid-x sticky" data-sticky data-top-anchor="parantyLogo:top" data-btm-anchor="lor:bottom" id="workCover">
-            <div class="small-8 small-offset-2" id="workCoverText"><img src="images/circle_green.svg" alt="dot" class="big_dots">
-              <h3>Works</h3>
+        <div class="medium-6 cell" data-sticky-container id="stky_container">
+          <div class="grid-x sticky" data-sticky data-top-anchor="parentLogo:top" data-btm-anchor="lor:bottom" id="workCover" data-margin-top: "0" style="top:0; margin-top:0;">
+            <div class="small-12 cell" id="workCoverText">
+              <img src="images/circle_green.svg" alt="dot" class="big_dots" id="work_dot">
+              <img src="images/works.svg" alt="work" id="work_text" width="950">
             </div>
-            <div>
+            <div class="cell">
               <nav class="grid-x aboutNav show-for-medium">
-                <h2 class="hide">Main Nav</h2>
-                <ul class="menu cell align-center" data-magellan>
-                  <!--<li class="navHome"><img src="images/circle_green.svg" alt="dot" width="10" class="dotHome"><a href="#home">Home</a></li>-->
+                <h2 class="hide">Works Nav</h2>
+                <ul class="menu  align-center cell" data-magellan>
+                  <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
                   <li class="navAbout"><img src="images/circle_green.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
                   <li class="navWork"><img src="images/circle_green.svg" alt="dot" width="10" class="dotWork"><a href="#work">Work</a></li>
                   <li class="navContact"><img src="images/circle_green.svg" alt="dot" width="10" class="dotContact"><a href="#contact">Contact</a></li>
@@ -125,12 +217,12 @@
         <div class="medium-6 cell" id="workBox">
           <ul class="grid-x grid-margin-x">
             <li id="parentLogo" class="work_item cell">
-              <img src="images/parent_logo_tinted.svg" alt="crunican" >
+              <img src="images/parent_logo_tinted.svg" alt="crunican">
               <h4 class="align-center">Parent Logo</h4>
             </li>
 
             <li id="crunican" class="work_item cell">
-              <img src="images/crunican_tinted.svg" alt="crunican" >
+              <img src="images/crunican_tinted.svg" alt="crunican">
               <h4 class="align-center">Crunican Orchard</h4>
             </li>
 
@@ -145,12 +237,12 @@
             </li>
 
             <li id="oev" class="work_item cell">
-              <img src="images/oev_tinted.svg" alt="oev" class="align-center">
+              <img src="images/oev_tinted.svg" alt="parentLogo" class="align-center">
               <h4 class="align-center">OEV<br>Revitalization</h4>
             </li>
 
             <li id="lor" class="work_item cell">
-              <img src="images/lor_tinted.svg" alt="lor" class="align-center">
+              <img src="images/lor_tinted.svg" alt="parentLogo" class="align-center">
               <h4 class="align-center">The Fellowship<br>of the Ring</h4>
             </li>
           </ul>
@@ -158,23 +250,31 @@
       </section>
 
       <!--lightbox-->
-      <section class="lightbox">
-        <i class="fa fa-times close-lightbox"></i>
-        <img src="" alt="WOW look at this lightbox image" class="lightbox-img">
-      </section>
+      <div class="lightbox grid-x" id="lightbox">
+        <h2 class="hide">lightbox</h2>
+        <div id="closeBtn">
+          <div id="close_top"></div>
+          <div id="close_btm"></div>
+        </div>
+        <div class="small-8 small-offset-2 large-6 large-offset-3" id="lightbox_content">
+          <img id="lightboxImg" alt="Brilliant Works!" class="lightbox-img align-center">
+          <p id="imgDesc"></p>
+        </div>
+      </div>
 
       <!--contact section-->
       <section id="contact" data-magellan-target="contact" class="grid-x">
         <h2 class="hide">Contact</h2>
         <!--contact cover-->
-        <div class="medium-6 cell" id="contactCover">
-          <div class="grid-x">
-            <div class="small-12" id="contactCoverText"><img src="images/circle_blue.svg" alt="dot" class="big_dots">
-              <h3>Contact</h3>
+        <div class="medium-6 cell" data-sticky-container id="stky_container_scnd">
+          <div class="grid-x sticky" data-sticky data-top-anchor="formHeader:top" data-btm-anchor="socialNav:bottom" id="contactCover">
+            <div class="small-12 cell" id="contactCoverText">
+              <img src="images/circle_blue.svg" alt="dot" class="big_dots" id="contact_dot">
+              <img src="images/contact.svg" alt="contact" id="contact_text" width="950">
             </div>
             <div class="cell">
               <nav class="grid-x aboutNav show-for-medium">
-                <h2 class="hide">Main Nav</h2>
+                <h2 class="hide">Contact Nav</h2>
                 <ul class="menu  align-center cell" data-magellan>
                   <!--<li class="navHome"><a href="#home">Home</a><img src="images/circle_blue.svg" alt="dot" width="10" class="dotHome"></li>-->
                   <li class="navAbout"><img src="images/circle_blue.svg" alt="dot" width="10" class="dotAbout"><a href="#about">About</a></li>
@@ -186,35 +286,41 @@
           </div>
         </div>
 
+
         <div class="medium-6 cell" id="contact_wrap">
-          <div id="formHeader">
-            <p>Leave me a message</p>
+          <h3 class="hide">Contact form</h3>
+          <div class="grid-x">
+            <div id="formHeader" class="small-12 cell">
+              <p>Leave me a message</p>
+            </div>
+            <div class="small-12 cell">
+              <form id="contactForm" class="grid-x">
+                <div class="small-10 small-offset-1 cell" id="basicInfo">
+
+                  <label for="name">Name: <span class="required">(required)</span></label>
+                  <input type="text" required id="name" name="fullName" size="30">
+
+                  <label for="email">Email: <span class="required">(required)</span></label>
+                  <input type="email" required id="email" size="30">
+
+                  <label for="phone">Phone:</label>
+                  <input type="text" id="phone" size="30">
+
+                  <label for="comments">Comments:</label>
+                  <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+                  <input id="submit" type="submit" value="Submit">
+                  <div class="hideMsg" id="hiddenMsg"></div>
+                </div>
+              </form>
+            </div>
+            <div class="small-12 cell">
+              <ul class="vertical menu cell" id="socialNav">
+                <li><a target="_blank" href="https://www.instagram.com/adrianzhao/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/adrian-yizhao-zhao-1a0a5620/">LinkedIn</a></li>
+                <li><a target="_blank" href="https://www.behance.net/adrianzhao">Behance</a></li>
+              </ul>
+            </div>
           </div>
-          <form id="contactForm" action="mail.php" method="post" class="grid-x">
-            <div class="small-10 small-offset-1 cell" id="theForm">
-              <label for="name">Name: <span class="required">(required)</span></label>
-              <input type="text" required id="name" name="fullName" size="30">
-
-              <label for="email">Email: <span class="required">(required)</span></label>
-              <input type="email" required id="email" size="30">
-
-              <label for="phone">Phone:</label>
-              <input type="text" id="phone" size="30">
-            </div>
-
-            <div class="small-10 small-offset-1 cell">
-              <label for="comments">Comments:</label>
-              <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
-              <input id="submit" type="submit" value="Submit">
-
-
-            </div>
-          </form>
-          <ul class="vertical menu cell" id="socialNav">
-            <li><a target="_blank" href="https://www.instagram.com/adrianzhao/">Instagram</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/adrian-yizhao-zhao-1a0a5620/">Linkedin</a></li>
-            <li><a target="_blank" href="https://www.behance.net/adrianzhao">Behance</a></li>
-          </ul>
         </div>
       </section>
     </div>
